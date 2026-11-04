@@ -18,10 +18,8 @@ import shopName, { products, formatEGP } from "./catalog.js";
  * @returns {number}
  */
 export function productCount() {
-  // TODO: the imported array is just an array.
-  throw new Error("productCount is not written yet");
+  return products.length;
 }
-
 /**
  * A price tag for one product.
  * priceTag({ name: "Notebook", price: 45 }) -> "45 EGP"
@@ -32,10 +30,8 @@ export function productCount() {
  * @returns {string}
  */
 export function priceTag(product) {
-  // TODO: pass the product's price to the imported function.
-  throw new Error("priceTag is not written yet");
+  return formatEGP(product.price);
 }
-
 /**
  * A heading for the catalog page.
  * shopHeading() -> "GIU Campus Store catalog"
@@ -45,10 +41,8 @@ export function priceTag(product) {
  * @returns {string}
  */
 export function shopHeading() {
-  // TODO: a template literal, with the imported name in it.
-  throw new Error("shopHeading is not written yet");
+  return `${shopName} catalog`;
 }
-
 /**
  * Now the other half of the module: you write a file, not just a function.
  *
