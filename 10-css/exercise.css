@@ -13,30 +13,44 @@
  *
  * Keep the page open in the browser and refresh after each change.
  */
+body {
+  font-family: Arial, sans-serif;
+  color: #222222;
+  background-color: #f5f7f6;
+}
 
-/* TODO: a rule for `body` that sets
- *       font-family, color, and background-color. */
+.page {
+  max-width: 900px;
+  margin: 0 auto;
+}
 
-/* TODO: a rule for `.page` that sets
- *       max-width, and margin (use `0 auto` to centre it). */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
 
-/* TODO: a rule for `header` that sets
- *       display: flex;
- *       justify-content: space-between;
- *       align-items: center;
- *       and one more property of your choosing. */
+nav a {
+  color: #087f5b;
+  text-decoration: none;
+}
 
-/* TODO: a rule for `nav a` — a descendant selector, so it only affects links
- *       inside the nav — that sets
- *       color, and text-decoration. */
+.card-list {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
 
-/* TODO: a rule for `.card-list` that sets
- *       display: flex;
- *       gap (any size);
- *       flex-wrap: wrap; */
 
-/* TODO: a rule for `.card` that sets
- *       padding, border-radius, and background-color. */
+.card {
+  padding: 20px;
+  border-radius: 12px;
+  background-color: #ffffff;
+}
 
-/* TODO: a rule for `.price` that sets
- *       color, and font-weight. */
+
+.price {
+  color: #087f5b;
+  font-weight: bold;
+}
